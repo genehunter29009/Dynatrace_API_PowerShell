@@ -13,5 +13,8 @@ $results = Invoke-RestMethod -Method GET -Uri $uri
 #$results.values
 foreach($result in $results.values)
 {
-"$result[0],$result[1],$result[2]" | write-host
+#convert to name you want to use. $country = $result[0]
+$result[0]
+$result[1]
+$result[2]
 }
